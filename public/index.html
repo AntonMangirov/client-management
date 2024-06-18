@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="auth-container" class="centered">
+      <h2>Пользователь</h2>
+      <form id="login-form">
+        <input type="text" id="login" placeholder="Логин" required />
+        <input type="password" id="password" placeholder="Пароль" required />
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+    <div id="client-container" class="centered" style="display: none">
+      <div class="header">
+        <h2>Таблица клиентов</h2>
+        <button id="logout-button">Выйти</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Номер счета</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Дата рождения</th>
+            <th>ИНН</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody id="client-table-body"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
